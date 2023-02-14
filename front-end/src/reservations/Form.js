@@ -153,6 +153,7 @@ function Form({ method }) {
                   onChange={handleChange}
                   value={formData.mobile_number}
                   required={true}
+                  pattern="[0-9]{10}"
                 />
               </div>
             </div>
@@ -172,6 +173,7 @@ function Form({ method }) {
                   onChange={handleChange}
                   value={formData.reservation_date}
                   required={true}
+                  pattern="\d{4}-\d{2}-\d{2}"
                 />
               </div>
             </div>
@@ -191,6 +193,7 @@ function Form({ method }) {
                   onChange={handleChange}
                   value={formData.reservation_time}
                   required={true}
+                  pattern="[0-9]{2}:[0-9]{2}"
                 />
               </div>
             </div>
